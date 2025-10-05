@@ -33,76 +33,68 @@ Saathi is architected to be a single, intelligent hub for managing the home, wit
 
 - AI-Powered Recipe Suggestions: To help answer the daily question of "what to cook?", the assistant can generate creative and simple recipe ideas based on the ingredients currently available in the smart pantry, reducing decision fatigue and inspiring new meal options.
 
-Tech Stack
+## Tech Stack
+
 Saathi is built with a modern, full-stack architecture that prioritizes privacy, speed, and a great user experience.
 
-Category
+| Category           | Technology                                                                                                                                                                                                                                                                                             |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Frontend** | ![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white) ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white) ![Vite](https://img.shields.io/badge/-Vite-646CFF?logo=vite&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white) |
+| **AI Engine** | ![Ollama](https://img.shields.io/badge/-Ollama-000000?logo=ollama&logoColor=white) ![Cerebras](https://img.shields.io/badge/-Cerebras-FF4F00?logo=cerebras&logoColor=white)                                                                                                                               |
+| **State Management** | ![React Context](https://img.shields.io/badge/-React_Context-61DAFB?logo=react&logoColor=white)                                                                                                                                                                                                   |
+| **UI Components** | ![Lucide React](https://img.shields.io/badge/-Lucide_React-1A1A1A?logo=lucide&logoColor=white)                                                                                                                                                                                                              |
 
-Technology
+## Getting Started
 
-Frontend
-
-
-
-AI Engine
-
-
-
-State Management
-
-
-
-UI Components
-
-
-
-Getting Started
 To run Saathi locally, you will need three separate terminals.
 
-Prerequisites
-Node.js (v18+)
+### Prerequisites
 
-Python (v3.9+)
+* Node.js (v18+)
+* Python (v3.9+)
+* Ollama installed and running
 
-Ollama installed and running
+### Installation & Setup
 
-Installation & Setup
-Clone the Repository:
+1.  **Clone the Repository:**
+    ```bash
+    git clone [https://github.com/your-username/saathi.git](https://github.com/your-username/saathi.git)
+    cd saathi
+    ```
 
-git clone [https://github.com/your-username/saathi.git](https://github.com/your-username/saathi.git)
-cd saathi
+2.  **Terminal 1: Run the AI Brain (Ollama)**
+    ```bash
+    ollama run llama3:8b
+    ```
 
-Terminal 1: Run the AI Brain (Ollama)
+3.  **Terminal 2: Run the Backend Server**
+    ```bash
+    cd backend
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    pip install -r requirements.txt
+    python app.py
+    ```
 
-ollama run llama3:8b
+4.  **Terminal 3: Run the Frontend Application**
+    ```bash
+    cd frontend
+    npm install
+    npm run dev
+    ```
+    Open the `localhost` URL provided by Vite in your browser.
 
-Terminal 2: Run the Backend Server
+## Future Vision
 
-cd backend
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
-python app.py
-
-Terminal 3: Run the Frontend Application
-
-cd frontend
-npm install
-npm run dev
-
-Open the localhost URL provided by Vite in your browser.
-
-Future Vision
 This hackathon prototype is just the beginning. The vision for Saathi is to evolve into an even more proactive and empathetic companion.
 
-Proactive Assistance: The AI will learn routines and proactively suggest tasks (e.g., "It's Wednesday, time to water the plants.").
+* **Proactive Assistance:** The AI will learn routines and proactively suggest tasks (e.g., "It's Wednesday, time to water the plants.").
+* **Deeper Personalization:** Saathi will learn the family's favorite meals and dietary preferences to offer even better recipe suggestions.
+* **WhatsApp Integration:** Exploring a secure, official integration to make the assistant accessible from anywhere.
+* **Appointment & Medication Reminders:** Expanding beyond chores to manage critical health-related reminders.
 
-Deeper Personalization: Saathi will learn the family's favorite meals and dietary preferences to offer even better recipe suggestions.
-
-WhatsApp Integration: Exploring a secure, official integration to make the assistant accessible from anywhere.
-
-Appointment & Medication Reminders: Expanding beyond chores to manage critical health-related reminders.
+---
 
 <div align="center">
-<p>Thank you for checking out Saathi.</p>
+  <p>Thank you for checking out Saathi.</p>
 </div>
