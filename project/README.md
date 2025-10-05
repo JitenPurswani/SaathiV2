@@ -11,3 +11,10 @@ This project is born from a desire to provide meaningful, practical support for 
 *   **Smart Pantry System:** The application intelligently tracks grocery items mentioned in chores. When a task like "buy 2 kgs of milk" is added, the virtual pantry is automatically updated, creating an always-current inventory of household supplies.
 
 *   **AI-Powered Recipe Suggestions:** To help answer the daily question of "what to cook?", the assistant can generate creative and simple recipe ideas based on the ingredients currently available in the smart pantry, reducing decision fatigue and inspiring new meal options.
+
+## Tech Stack
+
+*   **Frontend:** React, TypeScript, Vite, Tailwind CSS
+*   **AI:** Ollama, Cerebras
+*   **State Management:** React Context
+*   **UI Components:** Lucide React
